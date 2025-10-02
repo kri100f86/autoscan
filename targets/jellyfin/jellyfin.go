@@ -17,9 +17,9 @@ import (
 type Config struct {
 	URL            string             `yaml:"url"`
 	Token          string             `yaml:"token"`
-	UserID         string             `yaml:"user_id"`        // NOWE
-	Library        string             `yaml:"library"`        // NOWE (opcjonalne; jeśli puste, wybieramy na podstawie ścieżki)
-	PreciseRefresh bool               `yaml:"precise_refresh"`// NOWE
+	UserID         string             `yaml:"user_id"`         // NOWE
+	Library        string             `yaml:"library"`         // NOWE (opcjonalne; jeśli puste, wybieramy na podstawie ścieżki)
+	PreciseRefresh bool               `yaml:"precise_refresh"` // NOWE
 	Rewrite        []autoscan.Rewrite `yaml:"rewrite"`
 	Verbosity      string             `yaml:"verbosity"`
 }
