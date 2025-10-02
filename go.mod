@@ -1,4 +1,4 @@
-module github.com/cloudbox/autoscan
+module github.com/kri100f86/autoscan
 
 go 1.19
 
