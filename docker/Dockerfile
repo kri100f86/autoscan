@@ -17,6 +17,8 @@ COPY ["dist/autoscan_${TARGETOS}_${TARGETARCH}${TARGETVARIANT:+_7}/autoscan", "/
 # Add root files
 COPY ["docker/run", "/etc/services.d/autoscan/run"]
 
+COPY --from=build /out/autoscan /app/autoscan/autoscan
+
 # Volume
 VOLUME ["/config"]
 
